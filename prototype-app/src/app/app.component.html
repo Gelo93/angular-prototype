@@ -1,0 +1,13 @@
+<div *ngFor="let obj of tree">
+  <h2> Test Form </h2>
+  <div class="{{obj.CSSClass}}">
+    <div class="{{children.CSSClass}}" *ngFor="let children of obj.children">
+      <h2> {{children.Label}} </h2>
+      <div *ngFor="let child of children.children">
+        <label for="{{child.ShortCode}}">{{child.Label}}</label>
+        <input *ngIf="child.DisplayTypeShortCode === 'DATEPICKER'" type="text" id={{child.ShortCode}} #datepicker />
+        <input *ngIf="child.DisplayTypeShortCode != 'DATEPICKER'" type="text" id={{child.ShortCode}}>
+      </div>
+    </div>
+  </div>
+</div>

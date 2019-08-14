@@ -1,0 +1,62 @@
+{
+    "ScreenName": "Test form",
+    "DataComponents": [
+        {
+            "ShortCode": "FIRST_NAME",
+            "DisplayTypeShortCode": "TEXTBOX",
+            "Label": "First name",
+            "RenderAsMobile": true
+        },
+        {
+            "ShortCode": "LAST_NAME",
+            "DisplayTypeShortCode": "TEXTBOX",
+            "Label": "Last name",
+            "RenderAsMobile": true
+        },
+        {
+            "ShortCode": "DOB",
+            "DisplayTypeShortCode": "DATEPICKER",
+            "Label": "Date of birth",
+            "RenderAsMobile": true
+        },
+        {
+            "ShortCode": "PERSONAL_DETAILS_GROUP",
+            "DisplayTypeShortCode": "GROUP",
+            "Label": "Personal details",
+            "CSSClass": "group-card",
+            "Settings": [
+                { "Id": "DATA_COMPONENTS", "Text": "FIRST_NAME;LAST_NAME;DOB" }
+            ]
+        },
+        {
+            "ShortCode": "PHONE",
+            "DisplayTypeShortCode": "TEXTBOX",
+            "Label": "Phone number",
+            "RenderAsMobile": true
+        },
+        {
+            "ShortCode": "MOBILE",
+            "DisplayTypeShortCode": "TEXTBOX",
+            "Label": "Mobile number",
+            "RenderAsMobile": true
+        },
+        {
+            "ShortCode": "CONTACT_DETAILS_GROUP",
+            "DisplayTypeShortCode": "GROUP",
+            "Label": "Personal details",
+            "CSSClass": "group-card",
+            "Settings": [
+                { "Id": "DATA_COMPONENTS", "Text": "PHONE;MOBILE" }
+            ]
+        },
+        {
+            "ShortCode": "COLUMN_GROUP",
+            "DisplayTypeShortCode": "GROUP",
+            "Label": "",
+            "CSSClass": "has-2-columns",
+            "Settings": [
+                { "Id": "DATA_COMPONENTS", "Text": "PERSONAL_DETAILS_GROUP;CONTACT_DETAILS_GROUP" }
+            ]
+        }
+    ]
+}
